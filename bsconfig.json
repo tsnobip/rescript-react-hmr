@@ -1,0 +1,25 @@
+{
+  "name": "rescript-react-hmr",
+  "version": "1.0.0",
+  "jsx": {
+    "version": 4,
+    "mode": "automatic"
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": {
+    "module": "es6",
+    "in-source": true
+  },
+  "suffix": ".bs.mjs",
+  "bs-dependencies": ["@rescript/react"],
+  "warnings": {
+    "error": "+A"
+  },
+  "ppx-flags": [],
+  "namespace": true
+}
