@@ -20,15 +20,34 @@ Make changes in App.res, save and see how it fast refreshes.
 
 ## Troubleshooting
 
+### 1. Export only one react component per file
+
 Make sure to create `.resi` interface files for your `.res` component files so that only the component is exported.
 
-Make also sure in `vite.config.js` that the extension matches the one you have in `bsconfig.json`, for example:
+### 2. Include your generated JS files
+
+Make sure in `vite.config.js` that the extension matches the one you have in `rescript.json`, for example:
 
 ```js
 // in vite.config.js
 react({
-    include: ["**/*.bs.mjs"],
+    include: ["**/*.res.mjs"],
 }),
 ```
 
-Note that `@vitejs/plugin-react-swc` doesn't work for now, but the `@vitejs/plugin-react` already provides a quite fast experience.
+### 3. Set the right jsx runtime mode
+
+By default `@vite/plugin-react` uses the automatic mode (see the [docs](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md#jsxruntime)).
+
+If you use the classic mode, change vite config accordingly:
+
+```js
+// in vite.config.js
+react({
+    jsxRuntime: "classic",
+    include: ["**/*.res.mjs"],
+}),
+```
+
+> [!NOTE] 
+> `@vitejs/plugin-react-swc` doesn't work for now, but the `@vitejs/plugin-react` already provides a quite fast experience.
