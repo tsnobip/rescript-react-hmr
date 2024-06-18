@@ -22,7 +22,7 @@ let make = () => {
       </button>
       <p>
         {React.string("Edit ")}
-        <code> {React.string("src/App.res")} </code>
+        <code> {Common.StringExt.combinePaths("src", "App.res")->React.string} </code>
         {React.string(" and save to test HMR")}
       </p>
     </div>

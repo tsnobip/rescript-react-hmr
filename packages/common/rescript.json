@@ -1,5 +1,5 @@
 {
-  "name": "rescript-react-hmr",
+  "name": "common",
   "version": "1.0.0",
   "jsx": {
     "version": 4,
@@ -16,7 +16,7 @@
     "in-source": true
   },
   "suffix": ".bs.mjs",
-  "bs-dependencies": ["frontend", "common"],
+  "bs-dependencies": [],
   "warnings": {
     "error": "+A"
   },

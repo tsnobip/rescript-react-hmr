@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import ViteSvg from "/vite.svg";
+import * as StringExt$Common from "common/src/StringExt.bs.mjs";
 import * as JsxRuntime from "react/jsx-runtime";
 import ReactSvg from "./assets/react.svg";
 
@@ -56,7 +57,7 @@ function App(props) {
                               children: [
                                 "Edit ",
                                 JsxRuntime.jsx("code", {
-                                      children: "src/App.res"
+                                      children: StringExt$Common.combinePaths("src", "App.res")
                                     }),
                                 " and save to test HMR"
                               ]

@@ -7,13 +7,13 @@ It's just the translation to rescript of the basic vite react js template. I lef
 To test it, run in a terminal:
 
 ```sh
-yarn rescript build -w
+yarn rewatch watch
 ```
 
 and in another one:
 
 ```sh
-yarn dev
+yarn workspace frontend dev
 ```
 
 Make changes in App.res, save and see how it fast refreshes.
@@ -49,5 +49,4 @@ react({
 }),
 ```
 
-> [!NOTE] 
-> `@vitejs/plugin-react-swc` doesn't work for now, but the `@vitejs/plugin-react` already provides a quite fast experience.
+> [!NOTE] > `@vitejs/plugin-react-swc` doesn't work for now, but the `@vitejs/plugin-react` already provides a quite fast experience.

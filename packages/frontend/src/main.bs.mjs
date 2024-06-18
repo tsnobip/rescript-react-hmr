@@ -3,15 +3,15 @@
 import * as React from "react";
 import * as Belt_Option from "rescript/lib/es6/belt_Option.js";
 import * as Caml_option from "rescript/lib/es6/caml_option.js";
+import * as App$Frontend from "./App.bs.mjs";
 import * as Client from "react-dom/client";
 import * as JsxRuntime from "react/jsx-runtime";
-import * as App$RescriptReactHmr from "./App.bs.mjs";
 
 import './index.css';
 ;
 
 Client.createRoot(Belt_Option.getExn(Caml_option.nullable_to_opt(document.querySelector("#root")))).render(JsxRuntime.jsx(React.StrictMode, {
-          children: JsxRuntime.jsx(App$RescriptReactHmr.make, {})
+          children: JsxRuntime.jsx(App$Frontend.make, {})
         }));
 
 export {
