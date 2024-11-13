@@ -10,10 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@glennsl/rescript-fetch": "^0.2.2",
+    "@rescript/core": "^1.6.1",
     "@rescript/react": "^0.12.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "rescript": "^11.1.1"
+    "react-relay": "17.0.x",
+    "relay-runtime": "17.0.x",
+    "rescript": "^11.1.1",
+    "rescript-relay": "^3.0.1",
+    "rescript-relay-router": "^1.7.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.1",

@@ -1,0 +1,12 @@
+[
+  {
+    "path": "/",
+    "name": "Root",
+    "children": []
+  },
+  { "path": "/other", "name": "Other" },
+  {
+    "path": "*",
+    "name": "FourOhFour"
+  }
+]

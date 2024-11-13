@@ -16,7 +16,15 @@
     "in-source": true
   },
   "suffix": ".bs.mjs",
-  "bs-dependencies": ["@rescript/react", "common"],
+  "bs-dependencies": [
+    "@glennsl/rescript-fetch",
+    "@rescript/core",
+    "@rescript/react",
+    "common",
+    "rescript-relay",
+    "rescript-relay-router"
+  ],
+  "bsc-flags": ["-open RescriptCore"],
   "warnings": {
     "error": "+A"
   },

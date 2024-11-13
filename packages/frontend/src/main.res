@@ -5,6 +5,6 @@ ReactDOM.querySelector("#root")
 ->ReactDOM.Client.createRoot
 ->ReactDOM.Client.Root.render(
   <React.StrictMode>
-    <App />
+    <Index />
   </React.StrictMode>,
 )
